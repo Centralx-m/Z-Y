@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
-    <title>Z&Y Black Tea | Kano's Finest Blend ☕</title>
-    <!-- Font Awesome 6 (Free Icons) -->
+    <title>Z&Y Black Tea | DEVIL'S BREW ☕ | Kano Nigeria</title>
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -14,101 +14,117 @@
         }
 
         body {
-            background-color: #FDF8F0;  /* warm off-white background */
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            color: #3E2723; /* dark brown text */
+            background-color: #0D0D0D;  /* deep abyss black */
+            font-family: 'Segoe UI', 'Poppins', 'Impact', 'Arial Black', sans-serif;
+            color: #E0D8C8; /* ghost white / smoke */
             line-height: 1.5;
+            scroll-behavior: smooth;
         }
 
-        /* Color palette based on brand */
+        /* DEVIL PALETTE */
         :root {
-            --burgundy: #7A1C2E;
-            --gold: #D4AF37;
-            --dark-brown: #3E2723;
-            --white: #FFFFFF;
-            --light-gold: #F9E5AF;
-            --soft-bg: #FFF8F0;
+            --blood-red: #8B0000;
+            --crimson: #DC143C;
+            --charcoal: #1A1A1A;
+            --smoke: #2C2C2C;
+            --burned-gold: #8B7300;
+            --chaos-black: #0A0A0A;
+            --fearless-white: #F0E6D2;
         }
 
-        /* containers & layout */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.2rem;
         }
 
-        /* Typography */
+        /* Typography with edge */
         h1, h2, h3 {
-            font-weight: 700;
-            line-height: 1.2;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
         }
 
         h1 {
-            font-size: 2.2rem;
-            color: var(--burgundy);
+            font-size: 2.3rem;
+            background: linear-gradient(135deg, var(--crimson), var(--blood-red));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 5px rgba(220,20,60,0.3);
         }
 
         h2 {
             font-size: 1.8rem;
-            color: var(--burgundy);
-            border-left: 6px solid var(--gold);
+            color: var(--crimson);
+            border-left: 6px solid var(--crimson);
             padding-left: 0.8rem;
             margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 0px #1A1A1A;
         }
 
         h3 {
             font-size: 1.3rem;
-            color: var(--dark-brown);
+            color: var(--fearless-white);
             margin-bottom: 0.5rem;
         }
 
-        .gold-text {
-            color: var(--gold);
+        .blood-text {
+            color: var(--crimson);
+            font-weight: bold;
         }
 
-        .bg-burgundy {
-            background-color: var(--burgundy);
-            color: white;
+        .chaos-bg {
+            background: var(--charcoal);
+            border: 1px solid var(--crimson);
+            box-shadow: 0 0 12px rgba(220,20,60,0.3);
         }
 
+        /* Buttons – devilish call to action */
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 0.6rem;
-            background-color: var(--gold);
-            color: var(--burgundy);
+            background: var(--blood-red);
+            color: var(--fearless-white);
             font-weight: bold;
             padding: 0.9rem 1.6rem;
-            border-radius: 60px;
+            border-radius: 4px;
             text-decoration: none;
-            transition: 0.25s;
+            transition: all 0.25s ease;
             font-size: 1rem;
             border: none;
             cursor: pointer;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: inherit;
+            box-shadow: 0 0 8px rgba(139,0,0,0.5);
         }
 
         .btn-wa {
-            background-color: #25D366;
-            color: white;
+            background: #075E54;
+            border-left: 3px solid var(--crimson);
         }
 
         .btn-outline {
             background: transparent;
-            border: 2px solid var(--gold);
-            color: var(--gold);
+            border: 2px solid var(--crimson);
+            color: var(--crimson);
+            box-shadow: none;
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            filter: brightness(0.96);
+            transform: translateY(-3px);
+            filter: brightness(1.1);
+            background: #a01030;
+            box-shadow: 0 0 16px var(--crimson);
         }
 
-        /* Header / Nav */
+        /* Navigation – dark & sharp */
         .navbar {
-            background-color: var(--white);
-            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            background: var(--chaos-black);
+            border-bottom: 2px solid var(--crimson);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -119,18 +135,21 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            padding: 0.9rem 1.2rem;
+            padding: 0.8rem 1.2rem;
         }
 
         .logo h1 {
-            font-size: 1.6rem;
+            font-size: 1.7rem;
             margin: 0;
-            color: var(--burgundy);
+            background: linear-gradient(135deg, #DC143C, #8B0000);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
 
         .logo span {
-            color: var(--gold);
-            font-size: 1.2rem;
+            color: var(--crimson);
+            font-size: 1.3rem;
         }
 
         .nav-links {
@@ -142,49 +161,55 @@
 
         .nav-links a {
             text-decoration: none;
-            font-weight: 600;
-            color: var(--dark-brown);
+            font-weight: 700;
+            color: var(--fearless-white);
             transition: 0.2s;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
         }
 
         .nav-links a:hover {
-            color: var(--gold);
+            color: var(--crimson);
+            text-shadow: 0 0 3px crimson;
         }
 
-        /* Hero */
+        /* Hero – temptation call */
         .hero {
-            background: linear-gradient(135deg, #FFF3E0 0%, #FFE6CC 100%);
-            padding: 3rem 0;
-            border-bottom: 3px solid var(--gold);
+            background: radial-gradient(circle at 10% 20%, #1E0A0A, #070000);
+            padding: 3.5rem 0;
+            border-bottom: 3px solid var(--crimson);
             text-align: center;
+            position: relative;
         }
 
         .hero h2 {
             border-left: none;
-            font-size: 2.2rem;
-            margin-bottom: 0.8rem;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--crimson);
+            text-transform: uppercase;
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             max-width: 550px;
             margin: 0 auto 1.5rem;
-            color: #5a3e36;
+            color: #C0A080;
         }
 
         .badge {
             display: inline-block;
-            background: var(--burgundy);
-            color: var(--gold);
+            background: rgba(139,0,0,0.8);
+            color: var(--fearless-white);
             padding: 0.3rem 1rem;
-            border-radius: 40px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: bold;
+            letter-spacing: 1px;
             margin-bottom: 1rem;
+            border-left: 4px solid var(--crimson);
         }
 
-        /* Product Grid */
+        /* Product cards – dark temptation */
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -193,22 +218,29 @@
         }
 
         .product-card {
-            background: var(--white);
-            border-radius: 24px;
+            background: var(--charcoal);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-            transition: 0.2s;
-            border: 1px solid #f0e2d0;
+            transition: 0.25s;
+            border: 1px solid #4A0E1A;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+        }
+
+        .product-card:hover {
+            border-color: var(--crimson);
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(220,20,60,0.4);
         }
 
         .product-img {
-            background: #F2E5D8;
-            height: 190px;
+            background: #0F0A0A;
+            height: 180px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 4rem;
-            color: var(--burgundy);
+            color: var(--crimson);
+            border-bottom: 1px solid #520F1F;
         }
 
         .product-info {
@@ -217,23 +249,18 @@
 
         .price {
             font-weight: bold;
-            color: var(--burgundy);
+            color: var(--crimson);
             font-size: 1.3rem;
             margin: 0.5rem 0;
         }
 
-        .price small {
-            font-size: 0.8rem;
-            color: #7f6b5e;
-        }
-
         .dm-btn {
-            background-color: var(--gold);
-            color: var(--burgundy);
+            background: var(--blood-red);
+            color: white;
             border: none;
             width: 100%;
             padding: 0.75rem;
-            border-radius: 40px;
+            border-radius: 6px;
             font-weight: bold;
             margin-top: 0.8rem;
             display: flex;
@@ -243,22 +270,30 @@
             font-size: 0.9rem;
             transition: 0.2s;
             cursor: pointer;
+            text-transform: uppercase;
         }
 
+        .dm-btn:hover {
+            background: #ac0e2e;
+            box-shadow: 0 0 8px crimson;
+        }
+
+        /* Promo – Devil's Friday Drop */
         .promo-banner {
-            background: linear-gradient(120deg, #7A1C2E 0%, #a52a41 100%);
-            color: white;
-            padding: 1.8rem;
-            border-radius: 32px;
+            background: linear-gradient(145deg, #1e0a0a, #0a0104);
+            border: 2px solid var(--crimson);
+            padding: 2rem;
+            border-radius: 24px;
             text-align: center;
             margin: 2rem 0;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 0 24px rgba(220,20,60,0.4);
         }
 
         .promo-banner h3 {
-            color: var(--gold);
-            font-size: 1.8rem;
+            color: var(--crimson);
+            font-size: 2rem;
             margin-bottom: 0.5rem;
+            letter-spacing: -1px;
         }
 
         .checklist {
@@ -267,18 +302,19 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.5rem;
-            margin: 1.2rem 0;
+            margin: 1.5rem 0;
         }
 
         .checklist li i {
-            color: var(--gold);
+            color: var(--crimson);
             margin-right: 0.3rem;
         }
 
-        /* Kano Section */
+        /* Kano chaos – local delivery */
         .kano-info {
-            background: #FFF2E5;
-            border-radius: 28px;
+            background: #110707;
+            border-left: 6px solid var(--crimson);
+            border-radius: 16px;
             padding: 1.8rem;
             margin: 2rem 0;
         }
@@ -292,17 +328,18 @@
         }
 
         .zone {
-            background: white;
-            border-radius: 40px;
+            background: #1F1111;
+            border-radius: 30px;
             padding: 0.5rem 1rem;
-            font-weight: 500;
-            border: 1px solid var(--gold);
+            font-weight: 600;
+            border: 1px solid var(--blood-red);
+            color: #e6bf8a;
         }
 
-        /* Footer */
+        /* Footer – damnation */
         footer {
-            background-color: var(--burgundy);
-            color: #fce6cf;
+            background-color: #050000;
+            border-top: 2px solid var(--crimson);
             padding: 2rem 0;
             margin-top: 3rem;
         }
@@ -315,27 +352,33 @@
         }
 
         .social-icons a {
-            color: var(--gold);
+            color: var(--crimson);
             font-size: 1.6rem;
             margin-right: 1rem;
+            transition: 0.2s;
         }
 
         .whatsapp-float {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
+            bottom: 24px;
+            right: 24px;
+            background: #075E54;
             color: white;
             border-radius: 50px;
             padding: 0.8rem 1.3rem;
             font-weight: bold;
             display: flex;
             align-items: center;
-            gap: 0.6rem;
+            gap: 0.7rem;
             text-decoration: none;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 0 16px rgba(0,0,0,0.7), 0 0 0 2px var(--crimson);
             z-index: 99;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            font-family: monospace;
+        }
+
+        hr {
+            border-color: #4A0E1A;
         }
 
         @media (max-width: 700px) {
@@ -346,198 +389,186 @@
             .hero h2 {
                 font-size: 1.8rem;
             }
-            .btn {
-                padding: 0.7rem 1.2rem;
-            }
-            .whatsapp-float span {
-                display: inline;
-            }
         }
     </style>
 </head>
 <body>
 
-<!-- fixed whatsapp dm floating button -->
-<a href="https://wa.me/2347070715758?text=Hello%20Z%26Y%20Black%20Tea!%20I%20want%20to%20order%20your%20Tea%20Mix%20and%20Yaji%20spice." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-    <i class="fab fa-whatsapp"></i> <span>DM to: 07070715758</span>
+<!-- WhatsApp DM – direct to devil's order line -->
+<a href="https://wa.me/2347070715758?text=Devil%27s%20Blend%20-%20I%20want%20the%20forbidden%20tea%20and%20Yaji%20spice%20from%20Z%26Y." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i> <span>DM: 07070715758</span>
 </a>
 
-<!-- Navigation -->
+<!-- Navigation – ruthless & sharp -->
 <div class="navbar">
     <div class="nav-container">
         <div class="logo">
-            <h1>Z&Y Black Tea <span>☕</span></h1>
-            <small style="color: #7A1C2E;">Kano - Nigeria</small>
+            <h1>Z&Y BLACK TEA <span>☠️</span></h1>
+            <small style="color: #aa4a5a;">CHAOS IN A CUP | KANO</small>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#products">Shop</a></li>
-            <li><a href="#promo">Promos</a></li>
-            <li><a href="#kano">Kano Hub</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#products">DEVIL'S MENU</a></li>
+            <li><a href="#promo">FRIDAY DROP</a></li>
+            <li><a href="#kano">KANO PIT</a></li>
+            <li><a href="#contact">SUMMON</a></li>
         </ul>
     </div>
 </div>
 
-<!-- Hero Section -->
+<!-- HERO: Tempting , Ruthless, Fearless -->
 <section class="hero">
     <div class="container">
-        <div class="badge">☕ KANO'S FINEST BLEND</div>
-        <h2>Z&Y <span class="gold-text">Premium Blend</span><br> Black Tea & Yaji</h2>
-        <p>Rich taste · Sweet aroma · Affordable price · Crafted in Kano with passion.</p>
-        <a href="https://wa.me/2347070715758?text=I'd%20like%20to%20order%20your%20Tea%20Mix%20and%20Yaji%20spice" class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-        <a href="#products" class="btn btn-outline" style="margin-left: 0.6rem;">Explore Teas</a>
+        <div class="badge">⚡ TEMPTING · RUTHLESS · FEARLESS ⚡</div>
+        <h2>DEVIL'S BREW</h2>
+        <p>Pure Black Tea infused with chaos. Yaji spice that burns like temptation. From the heart of Kano — Z&Y Black Tea awakens the fearless.</p>
+        <a href="https://wa.me/2347070715758?text=I%20SUMMON%20THE%20DEVIL%20TEA%20BLEND" class="btn btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> ORDER VIA WHATSAPP</a>
+        <a href="#products" class="btn btn-outline" style="margin-left: 0.6rem;">☠️ UNLEASH MENU ☠️</a>
     </div>
 </section>
 
 <div class="container">
-    <!-- Products Section (Shop) -->
-    <section id="products" style="scroll-margin-top: 80px;">
-        <h2><i class="fas fa-leaf gold-text"></i> Our Signature Blends</h2>
+    <!-- PRODUCT SECTION – DARK BLENDS -->
+    <section id="products" style="scroll-margin-top: 90px;">
+        <h2><i class="fas fa-skull blood-text"></i> CHAOS IN HIS VEINS · TEAS</h2>
         <div class="product-grid">
-            <!-- Pure Blend Black Tea -->
+            <!-- Pure Black Tea – Devil's Blood -->
             <div class="product-card">
                 <div class="product-img">
                     <i class="fas fa-mug-hot fa-4x"></i>
                 </div>
                 <div class="product-info">
-                    <h3>Pure Blend Black Tea</h3>
-                    <p>Classic bold flavor, full-bodied liquor. Perfect for morning or afternoon chai.</p>
-                    <div class="price">₦1,200 <small>/ 100g</small> &nbsp; | &nbsp; ₦4,500 <small>/500g</small></div>
-                    <button class="dm-btn" onclick="window.open('https://wa.me/2347070715758?text=I%20want%20to%20order%20Pure%20Blend%20Black%20Tea%20(100g%20or%20500g)','_blank')"><i class="fab fa-whatsapp"></i> DM to order</button>
+                    <h3>PURE BLEND · BLOOD MOON</h3>
+                    <p>Bold, dark infusion. Awakens the ruthless side. Classic black tea with intense depth.</p>
+                    <div class="price">₦1,200 <small>/100g</small> | ₦4,500 <small>/500g</small></div>
+                    <button class="dm-btn" onclick="window.open('https://wa.me/2347070715758?text=I%20need%20Pure%20Blend%20Blood%20Moon%20tea','_blank')"><i class="fab fa-whatsapp"></i> DM TO ORDER</button>
                 </div>
             </div>
-            <!-- Tea Mix (Soulayms style) -->
-            <div class="product-card">
-                <div class="product-img" style="background:#f7e3cd;">
-                    <i class="fas fa-flask fa-4x" style="color:#7A1C2E;"></i>
-                </div>
-                <div class="product-info">
-                    <h3>✨ Z&Y Tea Mix ✨</h3>
-                    <p><strong>Rich taste · Sweet aroma · Affordable</strong> — our signature house blend enhanced with local spices.</p>
-                    <div class="price">₦1,500 <small>/ pouch</small> &nbsp; | &nbsp; Wholesale available</div>
-                    <button class="dm-btn" onclick="window.open('https://wa.me/2347070715758?text=I%20want%20Tea%20Mix%20–%20how%20much%20for%20bulk%3F','_blank')"><i class="fab fa-whatsapp"></i> Order Tea Mix</button>
-                </div>
-            </div>
-            <!-- Yaji Spice -->
-            <div class="product-card">
-                <div class="product-img" style="background:#eddbc9;">
-                    <i class="fas fa-pepper-hot fa-4x" style="color:#b9522f;"></i>
-                </div>
-                <div class="product-info">
-                    <h3>Yaji Spice (Hot/Mild)</h3>
-                    <p>Traditional Northern Nigerian spice mix — irresistible on roasted meats, snacks, or tea companion.</p>
-                    <div class="price">₦800 <small>/ 100g</small> &nbsp; | &nbsp; ₦3,000 <small>/500g</small></div>
-                    <button class="dm-btn" onclick="window.open('https://wa.me/2347070715758?text=I%20need%20Yaji%20Spice%20–%20hot%20or%20mild%20version%20please','_blank')"><i class="fab fa-whatsapp"></i> DM for Yaji</button>
-                </div>
-            </div>
-            <!-- Z&Y Premium Gift Pack -->
+            <!-- Tea Mix – Temptation -->
             <div class="product-card">
                 <div class="product-img">
-                    <i class="fas fa-gift fa-4x" style="color:goldenrod;"></i>
+                    <i class="fas fa-flask fa-4x"></i>
                 </div>
                 <div class="product-info">
-                    <h3>📦 Combo Pack (Tea + Yaji)</h3>
-                    <p>Bundle: 200g Black Tea + 150g Yaji Spice. Special price, perfect for gifting or stocking up.</p>
-                    <div class="price">₦2,500 <small>/ combo</small></div>
-                    <button class="dm-btn" onclick="window.open('https://wa.me/2347070715758?text=I%20want%20the%20Combo%20Pack%20(Tea%20%2B%20Yaji)','_blank')"><i class="fab fa-whatsapp"></i> Order Bundle</button>
+                    <h3>🔥 TEMPTATION TEA MIX 🔥</h3>
+                    <p><strong>Rich taste · Sweet aroma · CHAOS EDITION</strong> — signature local spice blend.</p>
+                    <div class="price">₦1,500 <small>/pouch</small> | Wholesale price</div>
+                    <button class="dm-btn" onclick="window.open('https://wa.me/2347070715758?text=Temptation%20Tea%20Mix%20-%20I%20want%20this%20chaos','_blank')"><i class="fab fa-whatsapp"></i> CLAIM TEMPTATION</button>
+                </div>
+            </div>
+            <!-- Yaji Spice – Ruthless Heat -->
+            <div class="product-card">
+                <div class="product-img">
+                    <i class="fas fa-pepper-hot fa-4x"></i>
+                </div>
+                <div class="product-info">
+                    <h3>RUTHLESS YAJI SPICE</h3>
+                    <p>Traditional Kano spice with hellfire kick. Perfect for fearless palates.</p>
+                    <div class="price">₦800 <small>/100g</small> | ₦3,000 <small>/500g</small></div>
+                    <button class="dm-btn" onclick="window.open('https://wa.me/2347070715758?text=Yaji%20spice%20-%20ruthless%20edition%20please','_blank')"><i class="fab fa-whatsapp"></i> GET YAJI</button>
+                </div>
+            </div>
+            <!-- Combo – Fearless Bundle -->
+            <div class="product-card">
+                <div class="product-img">
+                    <i class="fas fa-gift fa-4x"></i>
+                </div>
+                <div class="product-info">
+                    <h3>FEARLESS COMBO</h3>
+                    <p>Blood Moon Tea + Ruthless Yaji. Double chaos, single delivery.</p>
+                    <div class="price">₦2,500 <small>/combo</small></div>
+                    <button class="dm-btn" onclick="window.open('https://wa.me/2347070715758?text=Fearless%20Combo%20(Tea%20%2B%20Yaji)%20for%20me','_blank')"><i class="fab fa-whatsapp"></i> SUMMON COMBO</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROMO BANNER: “Available this Friday” inspired by Soulayms flyer -->
+    <!-- PROMO SECTION – DEVIL ANNOUNCEMENT (Friday drop) -->
     <section id="promo" style="scroll-margin-top: 80px;">
         <div class="promo-banner">
-            <i class="fas fa-bullhorn fa-2x" style="color: var(--gold);"></i>
-            <h3>🔥 Good News from Z&Y 🔥</h3>
-            <p style="font-size: 1.3rem; font-weight: bold;">Our special <strong>Tea Mix & Yaji Spice</strong> will be available again this Friday!</p>
+            <i class="fas fa-dragon fa-2x" style="color:#DC143C;"></i>
+            <h3>⚡ GOOD NEWS FROM THE ABYSS ⚡</h3>
+            <p style="font-size: 1.4rem; font-weight: bold; letter-spacing: 1px;">Our <strong>Tea Mix & Yaji Spice</strong> will be unleashed THIS FRIDAY!</p>
             <ul class="checklist">
                 <li><i class="fas fa-check-circle"></i> Rich taste</li>
                 <li><i class="fas fa-check-circle"></i> Sweet aroma</li>
-                <li><i class="fas fa-check-circle"></i> Affordable price</li>
-                <li><i class="fas fa-check-circle"></i> Don’t miss out!</li>
+                <li><i class="fas fa-check-circle"></i> Affordable price (Devil's discount)</li>
+                <li><i class="fas fa-skull"></i> Don't miss the chaos</li>
             </ul>
-            <a href="https://wa.me/2347070715758?text=I%20don't%20want%20to%20miss%20the%20Friday%20Tea%20Mix%20drop!" class="btn" style="background-color: white; color:#7A1C2E;"><i class="fab fa-whatsapp"></i> Reserve now – DM</a>
+            <a href="https://wa.me/2347070715758?text=Reserve%20Devil's%20Friday%20Drop%20-%20Tea%20Mix%20and%20Yaji" class="btn" style="background-color:#8B0000; color:white;"><i class="fab fa-whatsapp"></i> RESERVE YOUR DROP</a>
         </div>
     </section>
 
-    <!-- KANO SPECIAL: Local delivery & wholesale -->
-    <section id="kano" style="scroll-margin-top: 80px;">
+    <!-- KANO LOGISTICS – FEARLESS DELIVERY -->
+    <section id="kano" style="scroll-margin-top: 90px;">
         <div class="kano-info">
-            <h2><i class="fas fa-location-dot gold-text"></i> Kano Logistics & Bulk Orders</h2>
-            <p>📍 <strong>Based in the heart of Kano</strong> — We deliver across Nassarawa, Bompai, Airport Road, Sabon Gari, and more.</p>
+            <h2><i class="fas fa-location-arrow blood-text"></i> KANO · CHAOS HUB</h2>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>From Kano with fury</strong> — we deliver across Nassarawa, Bompai, Airport Road, Sabon Gari, and all dark corners of the metropolis.</p>
             <div class="delivery-grid">
-                <span class="zone">🚚 Same-day delivery (within Kano Metro)</span>
-                <span class="zone">🏭 Factory pickup: Z&Y Tea House, Kano</span>
-                <span class="zone">📦 Wholesale 5kg+ special rates</span>
+                <span class="zone">🔥 Same-day delivery (Kano Metro)</span>
+                <span class="zone">🏭 Pit pickup: Z&Y Tea Lair</span>
+                <span class="zone">📦 Wholesale 5kg+ – fear no minimum</span>
             </div>
-            <div style="margin-top: 1.2rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center;">
-                <p style="font-weight: 600;"><i class="fas fa-phone-alt gold-text"></i> Bulk Enquiry: DM 07070715758</p>
-                <a href="https://wa.me/2347070715758?text=I'm%20interested%20in%20wholesale%20tea%20(5kg%2B)%20for%20my%20shop%20in%20Kano" class="btn" style="background-color: #7A1C2E; color: var(--gold); border:1px solid var(--gold);">Request Wholesale price list</a>
+            <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+                <p style="font-weight: bold;"><i class="fas fa-phone-alt blood-text"></i> Bulk/Lodge orders: DM 07070715758</p>
+                <a href="https://wa.me/2347070715758?text=I%20need%20wholesale%20chaos%20(5kg+%20tea)%20in%20Kano" class="btn" style="background: #2c0a0a; border: 1px solid var(--crimson);">WHOLESALE PRICE LIST</a>
             </div>
         </div>
     </section>
 
-    <!-- Our Story & Quality Craft -->
+    <!-- OUR STORY – CHAOS ORIGIN -->
     <section style="margin: 2rem 0;">
-        <h2><i class="fas fa-heart gold-text"></i> Our Craft, Our Kano Roots</h2>
-        <div style="background: var(--white); border-radius: 28px; padding: 1.8rem; box-shadow: 0 5px 12px rgba(0,0,0,0.03);">
-            <p style="font-size: 1.05rem;">At <strong>Z&Y Black Tea</strong>, we blend premium leaves with traditional Northern Nigerian craftsmanship. Every batch is tasted to ensure <strong>✔ Rich taste ✔ Sweet aroma ✔ Affordable price</strong>. Whether you enjoy a warm cup at home or need bulk supply for your restaurant, we deliver authenticity from Kano to the world. Our tea is more than a drink — it's a culture.</p>
-            <div style="margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                <span><i class="fas fa-check-circle gold-text"></i> 100% natural ingredients</span>
-                <span><i class="fas fa-check-circle gold-text"></i> Small-batch blended</span>
-                <span><i class="fas fa-check-circle gold-text"></i> Ethically sourced</span>
-            </div>
+        <h2><i class="fas fa-fire blood-text"></i> THE CHAOS ORIGIN</h2>
+        <div style="background: #140A0A; border-radius: 24px; padding: 1.8rem; border-right: 3px solid var(--crimson);">
+            <p style="font-size: 1.05rem;"><strong>Z&Y Black Tea</strong> isn't just a drink — it's a pact. Born in the fiery markets of Kano, our blends carry the spirit of the fearless. <strong>✔ Rich taste ✔ Sweet aroma ✔ Affordable price</strong> — but with a ruthless edge. From our Devil's Cut Black Tea to the legendary Yaji Spice, every sip tempts fate. <span class="blood-text">CHAOS IN HIS VEINS.</span> Welcome to the rebellion.</p>
         </div>
     </section>
 
-    <!-- Contact & DM Callout -->
-    <section id="contact" style="scroll-margin-top: 90px; background: #FFF2E5; border-radius: 32px; padding: 1.8rem; margin-bottom: 1.5rem;">
+    <!-- CONTACT & SUMMON -->
+    <section id="contact" style="scroll-margin-top: 80px; background: #120808; border-radius: 28px; padding: 1.8rem; margin-bottom: 2rem; border-top: 2px solid var(--crimson);">
         <div style="text-align: center;">
-            <h2><i class="fas fa-comment-dots gold-text"></i> Connect with Z&Y</h2>
-            <p style="max-width: 500px; margin: 0 auto;">Orders are just a DM away! Quick response, friendly service.</p>
+            <h2><i class="fas fa-skull-crossbones blood-text"></i> SUMMON THE BREW</h2>
+            <p>DM to 07070715758 – quick responses from the abyss. No holy water needed.</p>
             <div style="display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin: 1.8rem 0;">
-                <a href="https://wa.me/2347070715758" target="_blank" style="background: #25D366; padding: 0.7rem 1.4rem; border-radius: 60px; color: white; text-decoration: none; font-weight: bold;"><i class="fab fa-whatsapp"></i> WhatsApp: 07070715758</a>
-                <a href="#" style="background: var(--burgundy); padding: 0.7rem 1.4rem; border-radius: 60px; color: white; text-decoration: none;"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="#" style="background: #0e76a8; padding: 0.7rem 1.4rem; border-radius: 60px; color: white; text-decoration: none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/2347070715758" target="_blank" style="background: #075E54; padding: 0.8rem 1.6rem; border-radius: 60px; color: white; text-decoration: none; font-weight: bold;"><i class="fab fa-whatsapp"></i> WHATSAPP: 07070715758</a>
+                <a href="#" style="background: #111; border: 1px solid #8B0000; padding: 0.8rem 1.6rem; border-radius: 60px; color: var(--crimson); text-decoration: none;"><i class="fab fa-instagram"></i> DEVIL'S INSTA</a>
+                <a href="#" style="background: #111; border: 1px solid #8B0000; padding: 0.8rem 1.6rem; border-radius: 60px; color: var(--crimson); text-decoration: none;"><i class="fab fa-linkedin"></i> DARK LINKEDIN</a>
             </div>
-            <p style="font-size: 0.9rem;"><i class="fas fa-map-pin"></i> Z&Y Black Tea Warehouse, Kano – Nigeria | DM for exact pickup location</p>
+            <p><i class="fas fa-tty"></i> Z&Y Black Tea – Kano, Nigeria / Curbside pickup: DM for exact location.</p>
         </div>
     </section>
 </div>
 
-<!-- Footer -->
 <footer>
     <div class="container">
         <div class="footer-flex">
             <div>
-                <h3 style="color: var(--gold);">Z&Y Black Tea ☕</h3>
-                <p>Premium blends & authentic Yaji from Kano.<br> “Great taste, rooted in tradition.”</p>
+                <h3 style="color: var(--crimson);">Z&Y BLACK TEA ⛧</h3>
+                <p>Fearless blends · Tempting aroma · From Kano with chaos.</p>
             </div>
             <div>
-                <h4 style="color: var(--gold);">Quick links</h4>
-                <p><a href="#products" style="color:#f3d9bf; text-decoration: none;">Shop</a><br>
-                <a href="#promo" style="color:#f3d9bf; text-decoration: none;">Friday Drop</a><br>
-                <a href="#kano" style="color:#f3d9bf; text-decoration: none;">Wholesale Kano</a></p>
+                <h4 style="color: var(--crimson);">CURSED LINKS</h4>
+                <p><a href="#products" style="color:#cfa57b; text-decoration: none;">Devil's Menu</a><br>
+                <a href="#promo" style="color:#cfa57b; text-decoration: none;">Friday Drop</a><br>
+                <a href="#kano" style="color:#cfa57b; text-decoration: none;">Kano Pit</a></p>
             </div>
             <div>
-                <h4 style="color: var(--gold);">Contact</h4>
+                <h4 style="color: var(--crimson);">CONTACT THE VOID</h4>
                 <p><i class="fab fa-whatsapp"></i> 07070715758<br>
-                DM for bulk & retail orders</p>
+                DM for bulk / rituals</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
-        <hr style="margin: 1.5rem 0; border-color: #a14555;">
-        <p style="text-align: center; font-size: 0.8rem;">© 2026 Z&Y Black Tea – Kano, Nigeria. All rights reserved.</p>
+        <hr style="margin: 1.5rem 0;">
+        <p style="text-align: center;">© 2026 Z&Y Black Tea – CHAOS IN HIS VEINS. Kano, Nigeria. ☕ Tempting · Ruthless · Fearless.</p>
     </div>
 </footer>
 
 <script>
-    // simple smooth scroll
+    // smooth navigation for demonic links
     document.querySelectorAll('.nav-links a, .btn-outline, a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
@@ -550,14 +581,12 @@
             }
         });
     });
-    // for "Explore teas" button to go to products
-    const exploreBtn = document.querySelector('.btn-outline');
-    if(exploreBtn && exploreBtn.getAttribute('href') === '#products') {
-        exploreBtn.addEventListener('click', function(e) {
+    document.querySelector('.btn-outline')?.addEventListener('click', function(e) {
+        if(this.getAttribute('href') === '#products') {
             e.preventDefault();
-            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
-        });
-    }
+            document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 </script>
 </body>
 </html>
